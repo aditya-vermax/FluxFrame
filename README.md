@@ -33,25 +33,6 @@ DRM, unsupported encryption, byte-range segments, discontinuities, I-frame-only 
 
 FluxFrame does not bypass authentication, paywalls, DRM, or site access controls. Download only media you own or are authorized to save.
 
-## Development
-
-Requirements: Google Chrome and Node.js.
-
-Run the HLS parser tests:
-
-```sh
-node --test tests/hls-parser.test.mjs
-```
-
-Build the extension icons and Chrome Web Store package from PowerShell:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-icons.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-release.ps1
-```
-
-The release script writes a versioned ZIP to `release/`; the ZIP has `manifest.json` at its root. Release ZIPs are generated artifacts and are excluded from source control.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE). It allows reuse, modification, redistribution, and commercial use provided the copyright and license notice are retained. Contributions are also offered under these terms unless stated otherwise.
