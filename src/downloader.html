@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="downloader.css" />
+    <title id="page-title">Downloading video…</title>
+  </head>
+  <body>
+    <main class="card">
+      <h1 id="page-heading">HLS downloader</h1>
+      <p id="video-title" class="video-title"></p>
+
+      <!-- Playlist loading step -->
+      <section id="step-loading">
+        <p id="loading-text" class="muted">Analyzing stream…</p>
+      </section>
+
+      <!-- Quality selection step for a master playlist -->
+      <section id="step-quality" class="hidden">
+        <h2 id="quality-heading">Choose a quality</h2>
+        <ul id="quality-list" class="quality-list"></ul>
+      </section>
+
+      <!-- Download progress step -->
+      <section id="step-progress" class="hidden">
+        <h2 id="progress-label">Downloading segments…</h2>
+        <div class="progress-track">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <p id="progress-text" class="muted"></p>
+        <p id="progress-warning" class="muted warn">Keep this tab open until the download finishes.</p>
+      </section>
+
+      <!-- Completion step -->
+      <section id="step-done" class="hidden">
+        <h2 id="done-heading">Download complete</h2>
+        <p id="done-text" class="muted"></p>
+      </section>
+
+      <!-- Error step -->
+      <section id="step-error" class="hidden">
+        <h2 id="error-heading">Download failed</h2>
+        <p id="error-text" class="muted"></p>
+      </section>
+
+      <p id="notes" class="notes hidden"></p>
+    </main>
+
+    <script type="module" src="downloader.js"></script>
+  </body>
+</html>
