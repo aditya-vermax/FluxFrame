@@ -52,12 +52,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-release.ps1
 
 The release script writes a versioned ZIP to `release/`; the ZIP has `manifest.json` at its root. Release ZIPs are generated artifacts and are excluded from source control.
 
-## Project documents
-
-- [Privacy policy draft](PRIVACY_POLICY.md)
-- [Chrome Web Store listing draft](STORE_LISTING.md)
-- [Release checklist](RELEASE_CHECKLIST.md)
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE). It allows reuse, modification, redistribution, and commercial use provided the copyright and license notice are retained. Contributions are also offered under these terms unless stated otherwise.
