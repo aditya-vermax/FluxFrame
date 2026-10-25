@@ -1,6 +1,6 @@
 # FluxFrame
 
-FluxFrame is an English-language Chrome extension that helps you find direct video files and supported HLS streams available on the page you are viewing. It lists detected media, starts direct downloads, and lets you choose a quality for supported HLS streams.
+FluxFrame is a Chrome extension that helps you find direct video files and supported HLS streams available on the page you are viewing. It lists detected media, starts direct downloads, and lets you choose a quality for supported HLS streams.
 
 ## Features
 
