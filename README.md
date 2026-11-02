@@ -23,6 +23,8 @@ Requirements: Google Chrome (Manifest V3). Node.js is only needed to run the tes
 3. Click **Load unpacked** and select the repository folder (the one containing `manifest.json`).
 4. Pin FluxFrame, open a page with supported media, and click the extension icon.
 
+> If you downloaded a release zip instead of cloning, extract it first — Chrome can't load a zip directly with **Load unpacked**.
+
 ## Permissions
 
 | Permission | Why it is needed |
