@@ -1,12 +1,8 @@
 # FluxFrame
 
-[![CI](https://github.com/aditya-vermax/FluxFrame/actions/workflows/ci.yml/badge.svg)](https://github.com/aditya-vermax/FluxFrame/actions/workflows/ci.yml)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 A Chrome extension that finds direct video files and supported HLS streams on the page you are viewing, then downloads them through Chrome.
 
-<!-- TODO: add a screenshot of the popup, e.g. docs/screenshot.png
-![FluxFrame popup](docs/screenshot.png) -->
+![FluxFrame popup](docs/screenshot.png)
 
 ## Features
 
