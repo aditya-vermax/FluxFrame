@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>FluxFrame</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand-lockup">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 8h4m-4 8h4m10-8h4m-4 8h4"/></svg>
+        </span>
+        <span class="brand-name">FluxFrame</span>
+      </div>
+      <div class="header-actions">
+        <button id="refresh" class="icon-button" type="button" aria-label="Refresh detection" title="Refresh detection">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9a7 7 0 0 1 11.7-2L20 12M4 12l2.7 5a7 7 0 0 0 11.7-2"/></svg>
+        </button>
+        <button id="help" class="icon-button" type="button" aria-label="About FluxFrame" title="About FluxFrame" aria-expanded="false" aria-controls="help-panel">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1 .9-1.8 1.3-1.8 2.8M12 17h.01"/></svg>
+        </button>
+        <button id="settings" class="icon-button" type="button" aria-label="Settings" title="Settings">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.2 2.1-2.1 3.6-2.4-.6a8 8 0 0 1-1.8 1l-.5 2.4h-4.2l-.5-2.4a8 8 0 0 1-1.8-1l-2.4.6-2.1-3.6 1.2-2.1a8 8 0 0 1 0-2l-1.2-2.1 2.1-3.6 2.4.6a8 8 0 0 1 1.8-1L9.7 4h4.2l.5 2.4a8 8 0 0 1 1.8 1l2.4-.6 2.1 3.6-1.2 2.1a8 8 0 0 1-.1 2.5Z" transform="translate(0 -1) scale(.92)"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-context">
+        <span id="site-name" class="site-name"></span>
+        <div class="section-heading">
+          <div><span class="eyebrow">BROWSER MEDIA</span><h1 id="section-title">Media on this page</h1></div>
+          <span id="media-count" class="media-count" aria-live="polite"></span>
+        </div>
+      </div>
+      <p id="help-panel" class="help-panel hidden"></p>
+      <p id="status" class="status hidden" role="status" aria-live="polite"></p>
+      <ul id="video-list" class="video-list"></ul>
+
+      <p id="empty" class="empty">
+        No supported media found yet. Play a video, then refresh detection.
+      </p>
+    </main>
+
+    <footer>
+      <small id="footer-copy">Only media available to you is shown.</small>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

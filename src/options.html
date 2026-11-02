@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="options.css" />
+    <title>FluxFrame settings</title>
+  </head>
+  <body>
+    <main class="settings-shell">
+      <header class="page-header">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 8h4m-4 8h4m10-8h4m-4 8h4"/></svg></span>
+          <span>FluxFrame</span>
+        </div>
+        <div class="title-stack"><span class="eyebrow">FLUXFRAME</span><h1 id="page-title">Settings</h1></div>
+      </header>
+
+      <section class="setting-section" aria-labelledby="blocked-title">
+        <h2 id="blocked-title">Ignored websites</h2>
+        <p id="blocked-help" class="muted">Media from these domains will not appear in detection results. Add one domain per line.</p>
+        <label class="visually-hidden" for="blacklist">Domains to ignore</label>
+        <textarea id="blacklist" rows="5" spellcheck="false" placeholder="example.com"></textarea>
+        <div class="form-actions">
+          <p id="settings-status" class="status" role="status" aria-live="polite"></p>
+          <button id="save-settings" class="primary-button" type="button">Save changes</button>
+        </div>
+      </section>
+
+      <section class="setting-section" aria-labelledby="history-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="history-title">Recent downloads</h2>
+            <p id="history-help" class="muted">A list of up to 30 downloads started by FluxFrame, stored only on this device.</p>
+          </div>
+          <button id="clear-history" class="secondary-button" type="button">Clear list</button>
+        </div>
+        <ul id="history-list" class="history-list"></ul>
+        <p id="history-empty" class="empty hidden">No FluxFrame downloads yet.</p>
+      </section>
+
+      <p id="privacy-note" class="privacy-note">Detection stays in your browser. Media requests go directly to the source website; recent download names and ignored domains stay in local extension storage.</p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
